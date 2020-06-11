@@ -114,12 +114,12 @@ if __name__ == "__main__":
     #-------------------------------#
     Use_Data_Loader = True
 
-    annotation_path = '2007_train.txt'
+    annotation_path = './train.txt'   #'2007_train.txt'
     #-------------------------------#
     #   获得先验框和类
     #-------------------------------#
-    anchors_path = 'model_data/yolo_anchors.txt'
-    classes_path = 'model_data/voc_classes.txt'   
+    anchors_path = './anchor.txt'
+    classes_path = './class.txt'   
     class_names = get_classes(classes_path)
     anchors = get_anchors(anchors_path)
     num_classes = len(class_names)
