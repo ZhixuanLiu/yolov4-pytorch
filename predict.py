@@ -7,7 +7,8 @@ from PIL import Image
 yolo = YOLO()
 
 while True:
-    img = input('Input image filename:')
+    #img = input('Input image filename:')
+    img = '../input/global-wheat-detection/test/796707dd7.jpg'
     try:
         image = Image.open(img)
     except:
