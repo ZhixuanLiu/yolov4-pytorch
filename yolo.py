@@ -160,7 +160,7 @@ class YOLO(object):
             # 画框框
             label = '{} {:.2f}'.format(predicted_class, score)
             draw = ImageDraw.Draw(image)
-            label_size = draw.textsize(label) , font)
+            label_size = draw.textsize(label, font)
             label = label.encode('utf-8')
             print(label)
             
