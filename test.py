@@ -5,7 +5,7 @@ from nets.yolo4 import YoloBody
 
 if __name__ == "__main__":
     # 需要使用device来指定网络在GPU还是CPU运行
-    model = YoloBody(3,20).to(device)
+    model = YoloBody(3,1).to(device)
     if True: 
         model_path = './wheat_yolo.pth'
         print('Loading weights into state dict...')
