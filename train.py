@@ -127,7 +127,7 @@ if __name__ == "__main__":
     
     # 创建模型
     model = YoloBody(len(anchors[0]),num_classes)
-    print ( "anchor: %d, num_classes: %d"(len(anchors[0], num_classes) ) ) 
+    print ( "anchor: %d, num_classes: %d"(len(anchors[0]), num_classes)  ) 
     #-------------------------------------------#
     #   权值文件的下载请看README
     #-------------------------------------------#
