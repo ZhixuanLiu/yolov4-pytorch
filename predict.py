@@ -20,3 +20,5 @@ while True:
         #r_image = yolo.detect_image(image)
     for i in boxes: 
         print (i) 
+    break 
+    
