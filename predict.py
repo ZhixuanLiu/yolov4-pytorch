@@ -16,7 +16,7 @@ while True:
         print('Open Error! Try again!')
         continue
     else:
-        r_image = yolo.detect_image(image)
-        #r_image.show()
-        img_np = np.array(r_image)
-        print ( img_np.shape )
+        boxes = yolo.get_boxes(image)
+        #r_image = yolo.detect_image(image)
+    for i in boxes: 
+        print (i) 
