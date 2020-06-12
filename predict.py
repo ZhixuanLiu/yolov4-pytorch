@@ -8,7 +8,7 @@ yolo = YOLO()
 
 while True:
     #img = input('Input image filename:')
-    img = '../input/global-wheat-detection/test/796707dd7.jpg'
+    img = '../input/global-wheat-detection/test/cc3532ff6.jpg'
     try:
         image = Image.open(img)
     except:
