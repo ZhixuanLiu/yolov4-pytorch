@@ -3,6 +3,7 @@
 #-------------------------------------#
 from yolo import YOLO
 from PIL import Image
+import numpy as np 
 
 yolo = YOLO()
 
