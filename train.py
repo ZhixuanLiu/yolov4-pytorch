@@ -51,11 +51,6 @@ def fit_ont_epoch(net,yolo_losses,epoch,epoch_size,epoch_size_val,gen,genval,Epo
         optimizer.zero_grad()
         outputs = net(images)
         losses = []
-        ####check output type:
-        for i in yolo_losses: 
-            print (i) 
-        
-        
         for i in range(3):
             loss_item = yolo_losses[i](outputs[i], targets)
             losses.append(loss_item[0])
