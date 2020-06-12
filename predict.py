@@ -17,4 +17,5 @@ while True:
     else:
         r_image = yolo.detect_image(image)
         #r_image.show()
-        print (type(r_image))
+        img_np = np.array(r_image)
+        print ( img_np.shape )
