@@ -19,9 +19,9 @@ from utils.utils import non_max_suppression, bbox_iou, DecodeBox,letterbox_image
 #--------------------------------------------#
 class YOLO(object):
     _defaults = {
-        "model_path": 'model_data/yolo4_weights.pth',
-        "anchors_path": 'model_data/yolo_anchors.txt',
-        "classes_path": 'model_data/coco_classes.txt',
+        "model_path": './wheat_yolo.pth',
+        "anchors_path": './anchor.txt',
+        "classes_path": './class.txt',
         "model_image_size" : (416, 416, 3),
         "confidence": 0.5,
         "cuda": True
